@@ -229,7 +229,13 @@ header{
   margin-top: 10px;
 }
 
-/* ----------------------------CONTACTÁNOS---------------------------- */
+/* ----------------------------SECTION EN INDEX CONTACTÁNOS---------------------------- */
+
+.subtitulo{
+  font-size: 40px;
+  font-family: 'Bebas Neue', 'sans-serif';
+}
+
 .index_contact{
   display: none;
 }
@@ -258,9 +264,12 @@ header{
   color: #fff;
 }
 
+.formulario input{
+  border-radius: 4px;
+}
+
 input, textarea{
   background-color:#ffff;
-  border-radius: 3px;
   width: 100%;
   padding: 10px;
   margin-bottom: 35px;
@@ -271,15 +280,25 @@ textarea{
   height: 100px;
 }
 
-#submit_button{
+.submitButton{
   background: #1f53c5;
-  padding: 4%;
-  border: none;
+  padding: 12px;
   cursor: pointer;
   color: #ffff;
-  margin: 18px 0;
+  height: 40px;
 }
 
+.indexContactText img{
+  display: none;
+}
+
+.indexContactText h3 {
+  display: none;
+}
+
+.indexContactText p{
+  display: none;
+}
 /* ----------------------------FOOTER---------------------------- */
 
 .footerContent{
@@ -493,7 +512,7 @@ header {
 
 #mainBusiness { 
   grid-area: main;
-  background-color: #ffff; 
+  background-color: #ffff;
 }
 
 footer{ 
@@ -558,6 +577,9 @@ footer{
   background-color: #f1f1f1; 
 }
 
+.formulario2{
+  display: none;
+}
 
 /* ----------------------------MEDIA QUERIES---------------------------- */
 
@@ -689,10 +711,12 @@ footer{
   }
 
   .indexContactText p{
+    display: block;
     margin-top: 15px;
   }
 
   .indexContactText h3{
+    display: block;
     font-size: 50px;
     text-transform: uppercase;
     font-family: 'Bebas Neue';
@@ -702,6 +726,8 @@ footer{
   }
 
   .indexContactText img {
+    display:block;
+    margin: auto;
     width: 35%;
     text-align: center;
     margin-top: 38px;
@@ -720,6 +746,7 @@ footer{
   margin-top: 100px;
   border-radius: 5px;
   box-shadow: 7px 13px 37px #000;
+  display:block;
   }
 
   input, textarea{
@@ -740,7 +767,7 @@ footer{
   height: 100px;
   }
 
-  #submitButton{
+  .submitButton{
   background: #1f53c5;
   border: none;
   cursor: pointer;
@@ -758,7 +785,7 @@ footer{
   }
 
   #grillaQuienesSomos{
-    grid-template-rows: 0.3fr 2fr 0.5fr;
+    grid-template-rows: 0.3fr 3fr 0.5fr;
   }
 
   .usContent{
@@ -767,6 +794,22 @@ footer{
   }
 
   #mainQuienesSomos{
-    height:100vh;
+    height: 100vh;
+  }
+
+  #mainServicios{
+    height: 100vh;
+  }
+
+  #mainBusiness{
+    height: 100vh;
+  }
+
+  #mainClientes{
+    height: 100vh;
+  }
+
+  #mainContacto{
+    height: 100vh;
   }
 }

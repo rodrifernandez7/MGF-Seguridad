@@ -34,6 +34,15 @@
                 <li><a href="business.html">Business</li></a>
                 <li><a href="contacto.html">Contacto</li></a>
             </ul>
+
+            <ul class="menuItemsDesplegable">
+                <li><a href="../index.html">Inicio</li></a>   
+                <li><a href="quienesSomos.html">Quienes somos</li></a>
+                <li><a href="servicios.html">Servicios</li></a>
+                <li><a href="clientes.html">Clientes</li></a>
+                <li><a href="business.html">Business</li></a>
+                <li><a href="contacto.html">Contacto</li></a>
+            </ul>
         </nav>
     </header>
     <!-- FIN DEL HEADER -->
@@ -59,7 +68,27 @@
         
             <textarea name="consulta" placeholder="Escriba su consulta:"></textarea>
         
-            <input type="submit" id='submit_button' value="Enviar consulta">
+            <input type="submit" class='submitButton' value="Enviar consulta">
+        </form>
+
+        <form action="" class="formulario2">
+            <label for="name">Nombre</label>
+            <input type="text" name="name">
+
+            <label for="surname">Apellido:</label>
+            <input type="text" name="surname">
+            
+            <label for="email">Correo electrónico:</label>
+            <input type="email" name="email">
+            
+            <label for="asunto">Asunto:</label>
+            <input type="text" name="asunto">
+            
+            <label for="consulta">Escriba su consulta:</label>
+            
+            <textarea name="consulta"></textarea>
+            
+            <input type="submit" class="submitButton" value="Enviar consulta">
         </form>
     </main>
     
