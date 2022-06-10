@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="img/IMG-6784.jpg">
     <script src="https://kit.fontawesome.com/f9d166c2a9.js" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>MGF Seguridad</title>
 </head>
@@ -14,16 +15,49 @@
     <div id="grilla">
         <!-- INICIO DEL HEADER -->
     <header>
+
+        <nav class="burgerMenu navbar navbar-light bg-light fixed-top">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html"><img src="img/IMG-6784.jpg" class="logo remove_bg" alt="logo mgf"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MGF Seguridad</h5>
+                  <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="index.html">INICIO</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="./sections/quienesSomos.html">QUIENES SOMOS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./sections/servicios.html">SERVICIOS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sections/clientes.html">CLIENTES</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sections/business.html">BUSINESS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./sections/contacto.html">CONTACTO</a>
+                      </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
+
         <nav class="menu">
 
             <div>
                 <a href="index.html"><img src="img/IMG-6784.jpg" class="logo remove_bg" alt=""></a>
             </div>
-
-            <input type="checkbox" id="check">
-            <label for="check">
-                <i class="fa-solid fa-bars buttonMenu"></i>
-            </label>
 
             <ul class="menuItems">
                 <li><a href="index.html">Inicio</li></a>   
@@ -34,14 +68,6 @@
                 <li><a href="./sections/contacto.html">Contacto</li></a>
             </ul>
 
-            <ul class="menuItemsDesplegable">
-                <li><a href="index.html">Inicio</li></a>   
-                <li><a href="./sections/quienesSomos.html">Quienes somos</li></a>
-                <li><a href="./sections/servicios.html">Servicios</li></a>
-                <li><a href="./sections/clientes.html">Clientes</li></a>
-                <li><a href="./sections/business.html">Business</li></a>
-                <li><a href="./sections/contacto.html">Contacto</li></a>
-            </ul>
         </nav>
     </header>
 <!-- FIN DEL HEADER -->
@@ -66,6 +92,7 @@
 
 <!-- INCIO DEL MAIN -->
     <main id="main">
+
         <h1 class="title">MGF Seguridad</h1>
 
         <p class="mainText">
@@ -73,50 +100,42 @@
             Una empresa caracterizada por su servicio siempre comprometido con la excelencia y eficiencia de su personal, posibilitando el cumplimiento de los objetivos de nuestros clientes de forma más segura  rápida y eficaz. Lo invitamos a conocernos...
         </p>
 
-        <a href="sections/quienesSomos.html" class="buttonSobreNosotros">Sobre Nosotros</a> 
+        <div class="serviciosCardContainer">
+            <div class="card" style="width: 18rem;">
+                <img src="img/guard.jpg" class="card-img-top" alt="servicios">
+                <div class="card-body">
+                  <h5 class="card-title text-center">ÁREA SEGURIDAD</h5>
+                  <a href="./sections/servicios.html" class="btn btn-primary mt-4 d-flex justify-content-center w-50 m-auto">Leer más</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="img/guardaespaldas.jpg" class="card-img-top" alt="servicios">
+                <div class="card-body">
+                  <h5 class="card-title text-center">CUSTODIAS</h5>
+                  <a href="./sections/servicios.html" class="btn btn-primary mt-4 d-flex justify-content-center w-50 m-auto">Leer más</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="img/analisis-seguridad.jpg" class="card-img-top" alt="servicios">
+                <div class="card-body">
+                  <h5 class="card-title text-center">ÁREA DE ANÁLISIS DE SEGURIDAD</h5>
+                  <a href="./sections/servicios.html" class="btn btn-primary mt-4 d-flex justify-content-center w-50 m-auto">Leer más</a>
+                </div>
+            </div>
+    
+            <div class="card" style="width: 18rem;">
+                <img src="img/camaras-seguridad.jpg" class="card-img-top" alt="servicios">
+                <div class="card-body">
+                  <h5 class="card-title text-center">ÁREA ELECTRÓNICA</h5>
+                  <a href="./sections/servicios.html" class="btn btn-primary mt-4 d-flex justify-content-center w-50 m-auto">Leer más</a>
+                </div>
+            </div>
+        </div>
 
     </main>
 <!-- FIN DEL MAIN -->
-
-<!-- INICIO DEL SECTION CON CARTAS DE SERVICIO -->
-    <section id="cardServicios">
-        <div class="serviciosCardContainer">
-
-            <div class="serviciosCard">
-                <img src="img/guard.jpg" alt="Área Seguridad">
-                <div class="serviciosCardContent">
-                    <h3>Área Seguridad</h3>
-                    <a href="sections/servicios.html" class="buttonLeerMas">Leer Más</a>
-                </div>
-            </div>
-
-            <div class="serviciosCard">
-                <img src="img/guardaespaldas.jpg" alt="Área Seguridad">
-                <div class="serviciosCardContent">
-                    <h3>Custodias</h3>
-                    <a href="sections/servicios.html" class="buttonLeerMas">Leer Más</a>
-                </div>
-            </div>
-            
-            <div class="serviciosCard">
-                <img src="img/analisis-seguridad.jpg" alt="Área Seguridad">
-                <div class="serviciosCardContent">
-                    <h3>Área de Análisis de Seguridad</h3>
-                    <a href="sections/servicios.html" class="buttonLeerMas">Leer Más</a>
-                </div>
-            </div>
-
-            <div class="serviciosCard">
-                <img src="img/camaras-seguridad.jpg" alt="Área Seguridad">
-                <div class="serviciosCardContent">
-                    <h3>Área Electrónica</h3>
-                    <a href="sections/servicios.html" class="buttonLeerMas">Leer Más</a>
-                </div>
-            </div>
-
-        </div>
-    </section>
-<!-- FIN DEL SECTION CON CARTAS DE SERVICIO -->
 
 <!-- INICIO SECTION EN INDEX CONTACTANOS -->
     <section id="contactanos">
@@ -195,5 +214,10 @@
     </footer>
 <!-- FIN DEL FOOTER -->
     </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
