@@ -274,7 +274,7 @@ footer{
   font-family: 'Poppins', sans-serif;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 110px 2fr 0.5fr;
+  grid-template-rows: 110px 2.5fr 0.3fr;
   grid-auto-columns: 1fr;
   grid-auto-rows: 1fr;
   gap: 0px 0px;
@@ -304,35 +304,21 @@ footer{
 }
 
 .serviciosTitle{
-  display: flex;
-  justify-content:center;
-  padding-bottom: 20px;
-  text-transform: uppercase;
   font-family: 'Bebas Neue', 'sans-serif';
+  text-align: center;
   font-size: 2.5rem;
-  letter-spacing: 3px;
-  margin-top: 50px;
+  letter-spacing: 2px;
+  margin-top: 25px;
 }
 
 .serviciosContainer{
   display: flex;
   justify-content:center;
   flex-wrap: wrap;
-  margin-top: 50px;
 }
 
-.serviciosCard{
-  width: 280px;
-  margin: 20px;
-}
-
-.cardTitle{
-  text-align: center;
-  border-bottom:  1px solid #24303c;
-}
-
-.serviciosCardContent{
-  padding: 0% 6% 0% 6%;
+.serviciosContainer2{
+  display: none;
 }
 
  /* ----------------------------SECCION CLIENTES---------------------------- */
@@ -484,6 +470,10 @@ footer{
     grid-template-rows: 200px 600px 1fr 0.4fr 400px;
   }
 
+  #grillaServicios {
+    grid-template-rows: 110px 3fr 0.3fr;
+  }
+
   .serviciosCardContainer{
     width: 90%;
     margin: auto;
@@ -502,6 +492,42 @@ footer{
   .clientesContainer{
     width: 90%;
     margin: auto;
+  }
+
+  .serviciosContainer{
+    display: none;
+  }
+
+  .serviciosContainer2{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+
+  .cardTitleServicios {
+    text-align: center;
+    font-weight:bold;
+  }
+
+  .card-body ul {
+    padding-right: 2rem;
+    height: 380px;
+  }
+
+  .card-text li{
+    padding-top: 7%;
+    margin-top: 15px;
+    border-bottom: 1px solid rgba(0,0,0,.125);
+  }
+
+  .btnServicios{
+    margin-top: 40px;
+  }
+
+  .btnServiciosContainer{
+    display: flex;
+    justify-content: center;
   }
 }
 
@@ -527,6 +553,23 @@ footer{
   .menuItems li a{
     color: black;
     font-size: 18px;
+    padding: 0 10px;
+    position: relative;
+  }
+
+   .menuItems li a::after{
+    content: "";
+    position: absolute;
+    background-color: rgb(86, 101, 115);
+    height:3px;
+    width:0;
+    left: 0;
+    bottom: -10px;
+    transition: all 0.5s;
+  }
+
+  .menuItems li a:hover:after{
+    width:100%;
   }
 
   label {
@@ -568,10 +611,6 @@ footer{
 
   .menuItems{
     margin-right: 60px;
-  }
-
-  .menuItems li a:hover{
-    opacity: 0.5;
   }
 
   .serviciosCardContainer{
@@ -702,4 +741,5 @@ footer{
   .banner {
     height: 100vh;
   }
+
 }
