@@ -496,13 +496,12 @@ footer{
 /* ----------------------------MEDIA QUERIES---------------------------- */
 
 @media (min-width: 768px){
+
   #grilla {
     grid-template-rows: 200px 600px 1fr 0.4fr 400px;
   }
 
-  #grillaServicios {
-    grid-template-rows: 110px 3fr 0.3fr;
-  }
+  /* MAIN DEL INDEX 768px */
 
   .serviciosCardContainer{
     width: 90%;
@@ -515,13 +514,15 @@ footer{
     height: 50px;
   }
 
-  #grillaQuienesSomos{
-    grid-template-rows: 0.2fr 5fr 0.5fr;
-  }
-
   .clientesContainer{
     width: 90%;
     margin: auto;
+  }
+
+  /* SECCION SERVICIOS 768px */
+
+  #grillaServicios {
+    grid-template-rows: 110px 3fr 0.3fr;
   }
 
   .serviciosContainer{
@@ -561,6 +562,13 @@ footer{
     justify-content: center;
   }
 
+  /* SECCION QUIENES SOMOS 768px */
+
+  #grillaQuienesSomos{
+    grid-template-rows: 0.2fr 5fr 0.5fr;
+  }
+
+
   .quienesSomosBtn{
     margin-bottom: 90px;
   }
@@ -571,6 +579,8 @@ footer{
 }
 
 @media (min-width: 1024px) {
+
+  /* INDEX 1024px */
 
   .burgerMenu{
     display: none;
@@ -629,6 +639,8 @@ footer{
     box-shadow: 0 12px 16px rgba(0,0,0,0.2)
   }
 
+  /* SECCION QUIENES SOMOS 1024px */
+
   #grillaQuienesSomos{
     grid-template-rows: 0.2fr 2.5fr 0.5fr;
   }
@@ -657,6 +669,8 @@ footer{
   .card-text li{
     font-size: 16px;
   }
+
+  /* SECCION BUSINESS 1024px */
 
   .businessContainer1{
     display: none;
@@ -717,6 +731,8 @@ footer{
     grid-template-rows: 180px 0.5fr 1fr 0.8fr 0.1fr;
   }
 
+  /* INDEX */
+
   .bannerTitle{
     text-align: center;
     margin-top: 60px;
@@ -752,10 +768,6 @@ footer{
     line-height: 35px;
     padding-left: 15%;
     padding-right: 15%;
-  }
-
-  .buttonSobreNosotros{
-    width: 10%;
   }
 
   .formulario{
@@ -854,6 +866,8 @@ footer{
     height: 100vh;
   }
 
+  /* SECCION QUIENES SOMOS 1200px */
+
   #grillaQuienesSomos{
     grid-template-rows: 0.3fr 3fr 0.5fr;
   }
@@ -892,6 +906,8 @@ footer{
   .quienesSomosImg{
     border-radius: 5px;
   }
+
+  /* SECCION BUSINESS 1200px */
 
   .businessContainer2{
     width: 90%;
