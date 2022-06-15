@@ -1,0 +1,102 @@
+/* ----------------------------SECCION SERVICIOS---------------------------- */
+
+#grillaServicios{
+    font-family: 'Poppins', sans-serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 110px 2.5fr 0.3fr;
+    grid-auto-columns: 1fr;
+    grid-auto-rows: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "header"
+      "main"
+      "footer";
+  }
+  
+  header { 
+    grid-area: header; 
+  }
+  
+  #mainServicios { 
+    grid-area: main;
+    background-color: #ffff; 
+  }
+  
+  footer{ 
+    grid-area: footer; 
+    background-color: #f1f1f1; 
+  }
+  
+  #cardServicios serviciosCardContent h3{
+    display: block;
+  }
+  
+  .serviciosTitle{
+    font-family: 'Bebas Neue', 'sans-serif';
+    text-align: center;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    margin-top: 25px;
+  }
+  
+  .serviciosContainer{
+    display: flex;
+    justify-content:center;
+    flex-wrap: wrap;
+  }
+  
+  .serviciosContainer2{
+    display: none;
+  }
+
+
+  /* ----------------------------MEDIA QUERIES---------------------------- */
+
+  @media (min-width: 768px) {
+    #grillaServicios {
+      grid-template-rows: 110px 3fr 0.3fr;
+    }
+
+    .card-body h5{
+      height: 50px;
+    }
+  
+    .serviciosContainer{
+      display: none;
+    }
+  
+    .serviciosContainer2{
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+  
+    .cardTitleServicios {
+      text-align: center;
+      font-weight:bold;
+    }
+  
+    .card-body ul {
+      padding-right: 2rem;
+      height: 380px;
+    }
+  
+    .card-text li{
+      padding-top: 7%;
+      margin-top: 15px;
+      border-bottom: 1px solid rgba(0,0,0,.125);
+  
+    }
+  
+    .btnServicios{
+      margin-top: 40px;
+    }
+  
+    .btnServiciosContainer{
+      display: flex;
+      justify-content: center;
+    }
+  }

@@ -1,0 +1,18 @@
+/* ----------------------------FOOTER---------------------------- */
+
+.footerContent{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    text-align: center;
+    gap: 8px;
+
+    a{
+      color: black;
+    }
+
+    p{
+      text-align: center;
+      margin-top: 40px;
+    }
+  }

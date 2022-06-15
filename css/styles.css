@@ -881,9 +881,9 @@ footer{
     width: 80%;
   }
 
-  .quienesSomosContent2 img{
-    width: 100%;
-  }
+  /* .quienesSomosContent2 img{
+    
+  } */
 
   .usContent{
     padding-left: 10%;
@@ -900,7 +900,8 @@ footer{
   .quienesSomosContent1 img{
     display: block;
     margin: auto;
-    width: 200px;
+    width: 180px;
+    margin-top: 25px;
   }
 
   .quienesSomosImg{
