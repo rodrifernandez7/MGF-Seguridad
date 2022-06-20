@@ -1,3 +1,5 @@
+@import "variables";
+
 /* ----------------------------BANNER---------------------------- */
 
 #grilla {  
@@ -78,7 +80,15 @@ footer{
     background-color: #24303c;
     color: #fff;
   }
+
+  .mixin img{
+    display:none;
+  }
+  .mixin2 a {
+    display: none;
+  }
   
+
   /* ----------------------------MAIN DEL INDEX CON SERVICIOS---------------------------- */
   .title{
     text-align: center;
@@ -272,7 +282,7 @@ footer{
       word-spacing: 8px;
       letter-spacing: 2px;
     }
-  
+
     .logo{
       width: 80px;
     }

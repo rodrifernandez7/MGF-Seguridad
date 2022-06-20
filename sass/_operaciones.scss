@@ -1,0 +1,34 @@
+@mixin sizes ($width, $height){
+    width: $width;
+    height: $height;
+}
+
+.mixin img{
+    @include sizes (300px, 120px);
+    @media (min-width: 1200px) { 
+        display:block;
+        margin: auto;
+        margin-top: 50px;
+    }
+}
+
+
+@mixin tamaño ($ancho, $alto){
+    width: $ancho;
+    height: $alto;
+}
+
+.mixin2 a{
+    @include tamaño (180px,45px);
+    @media(min-width: 1200px) {
+        display:block;
+        margin: auto;
+        text-align: center;
+        border-radius: 3px;
+        margin-top: 50px;
+        margin-bottom: 25px;
+        padding: 10px;
+        background-color: rgb(36, 48, 60);
+        color: rgb(255, 255, 255);
+    }
+}
