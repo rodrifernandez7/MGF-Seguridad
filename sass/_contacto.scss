@@ -1,4 +1,5 @@
 /* ----------------------------SECCION CONTACTO---------------------------- */
+@import "variables";
 
 #grillaContacto{
     font-family: 'Poppins', sans-serif;
@@ -21,7 +22,7 @@
   
   #mainContacto { 
     grid-area: main;
-    background-color: #F1FAFF; 
+    background-color: $color3; 
   }
   
   footer{ 

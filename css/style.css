@@ -105,14 +105,6 @@ footer {
   color: #fff;
 }
 
-.mixin img {
-  display: none;
-}
-
-.mixin2 a {
-  display: none;
-}
-
 /* ----------------------------MAIN DEL INDEX CON SERVICIOS---------------------------- */
 .title {
   text-align: center;
@@ -863,7 +855,7 @@ header {
 
 #mainContacto {
   grid-area: main;
-  background-color: #F1FAFF;
+  background-color: #fcfafa;
 }
 
 footer {
@@ -894,34 +886,4 @@ footer {
 .copyright {
   margin-top: 30px;
   text-align: center;
-}
-
-.mixin img {
-  width: 300px;
-  height: 120px;
-}
-@media (min-width: 1200px) {
-  .mixin img {
-    display: block;
-    margin: auto;
-    margin-top: 50px;
-  }
-}
-
-.mixin2 a {
-  width: 180px;
-  height: 45px;
-}
-@media (min-width: 1200px) {
-  .mixin2 a {
-    display: block;
-    margin: auto;
-    text-align: center;
-    border-radius: 3px;
-    margin-top: 50px;
-    margin-bottom: 25px;
-    padding: 10px;
-    background-color: rgb(36, 48, 60);
-    color: rgb(255, 255, 255);
-  }
 }/*# sourceMappingURL=style.css.map */
