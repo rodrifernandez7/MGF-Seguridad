@@ -78,7 +78,7 @@ footer{
     margin-bottom: 25px;
     padding: 20px;
     background-color: #24303c;
-    color: #fff;
+    color: #fff !important;
   }
 
   /* ----------------------------MAIN DEL INDEX CON SERVICIOS---------------------------- */
@@ -266,7 +266,7 @@ footer{
     #grilla{
       grid-template-rows: 180px 0.5fr 1fr 0.8fr 0.1fr;
     }
-  
+
     .bannerTitle{
       text-align: center;
       margin-top: 60px;
@@ -285,6 +285,7 @@ footer{
   
     .serviciosCardContainer{
       width: 75%;
+      margin-top: 130px;
     }
    
     .bannerImg{
@@ -294,9 +295,13 @@ footer{
     .buttonIndex{
       width: 10%;
     }
+
+    .title{
+      margin-top: 70px;
+    }
   
     .mainText{
-      margin-top: 30px;
+      margin-top: 70px;
       font-size: 20px;
       text-align: center;
       line-height: 35px;

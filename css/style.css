@@ -102,7 +102,7 @@ footer {
   margin-bottom: 25px;
   padding: 20px;
   background-color: #24303c;
-  color: #fff;
+  color: #fff !important;
 }
 
 /* ----------------------------MAIN DEL INDEX CON SERVICIOS---------------------------- */
@@ -299,6 +299,7 @@ textarea {
 
   .serviciosCardContainer {
     width: 75%;
+    margin-top: 130px;
   }
 
   .bannerImg {
@@ -309,8 +310,12 @@ textarea {
     width: 10%;
   }
 
+  .title {
+    margin-top: 70px;
+  }
+
   .mainText {
-    margin-top: 30px;
+    margin-top: 70px;
     font-size: 20px;
     text-align: center;
     line-height: 35px;
@@ -454,11 +459,6 @@ footer {
   border-radius: 3px;
 }
 
-.quienesSomosBtn {
-  margin-top: 90px;
-  text-align: center;
-}
-
 .quienesSomosContent2 {
   text-align: center;
 }
@@ -471,10 +471,6 @@ footer {
 @media (min-width: 768px) {
   #grillaQuienesSomos {
     grid-template-rows: 0.2fr 5fr 0.5fr;
-  }
-
-  .quienesSomosBtn {
-    margin-bottom: 90px;
   }
 
   .usContent {
@@ -501,10 +497,6 @@ footer {
 
   .usContent {
     text-align: left;
-  }
-
-  .quienesSomosBtn {
-    display: none;
   }
 
   .card-text li {
