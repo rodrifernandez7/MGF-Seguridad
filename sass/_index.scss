@@ -25,12 +25,12 @@ header {
 
 .banner { 
   grid-area: banner; 
-  background-color: $color3;
+  background-color: #f8fcff;
 }
 
 main { 
   grid-area: main; 
-  background-color: $color2;
+  background-color: rgb(255, 255, 255);
 }
 
 #contactanos {
@@ -40,7 +40,10 @@ main {
 
 footer{ 
   grid-area: footer; 
-  background-color: #f1f1f1; 
+}
+
+.burgerMenu{
+  background-color: #f8fcff !important;
 }
 
 .bannerContainer{
@@ -74,10 +77,11 @@ footer{
     width: 40%;
     height: 30px;
     border-radius: 4px;
+    border: none;
     margin-top: 40px;
     margin-bottom: 25px;
     padding: 20px;
-    background-color: #24303c;
+    background-color: rgb(58, 76, 95);
     color: #fff !important;
   }
 
@@ -229,7 +233,7 @@ footer{
      .menuItems li a::after{
       content: "";
       position: absolute;
-      background-color: rgb(171, 178, 185);
+      background-color: rgb(164, 188, 212);
       height:3px;
       width:0;
       left: 0;
@@ -352,27 +356,27 @@ footer{
     .indexContact form{
       width: 60%;
     }
-  
+
     .formulario2{
-    color:#ffff;
-    width: 65%;
-    background-color: #24303c;
-    padding: 25px;
-    margin: auto;
-    margin-top: 100px;
-    margin-bottom: 100px;
-    border-radius: 5px;
-    display:block !important;
-    }
+      width: 65%;
+      background-color: #F1FAFF;
+      padding: 25px;
+      margin: auto;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      border-radius: 5px;
+      display:block !important;
+      }
+    
   
     input, textarea{
-    background-color:#24303c;
+    color: black;
+    background-color:white;
     border-radius: 5px;
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
-    border: 1px solid #1f53c5;
-    color: #ffff;
+    border: 1px solid #f1f1f1;
     }
   
     form label{
