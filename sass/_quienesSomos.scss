@@ -56,7 +56,7 @@ footer{
 @media (min-width: 768px){
 
   #grillaQuienesSomos{
-    grid-template-rows: 0.2fr 5fr 0.5fr;
+    grid-template-rows: 0.3fr 4.5fr 1fr;
   }
 
   .usContent{
@@ -69,7 +69,7 @@ footer{
 @media (min-width: 1024px) {
 
   #grillaQuienesSomos{
-    grid-template-rows: 0.2fr 2.5fr 0.5fr;
+    grid-template-rows: 110px 2.5fr 0.5fr;
   }
 
   .quienesSomosImg{
@@ -105,10 +105,6 @@ footer{
   .quienesSomosContainer{
     width: 90%;
     margin-top: 80px;
-  }
-
-  .quienesSomosContent2{
-    width: 80%;
   }
 
   .usContent{

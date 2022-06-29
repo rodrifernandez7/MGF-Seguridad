@@ -46,6 +46,14 @@ footer{
   background-color: #f8fcff !important;
 }
 
+.menu{
+  display: none;
+}
+
+.menuIndex{
+  display: none;
+}
+
 .bannerContainer{
     display: flex;
     flex-direction: column;
@@ -124,10 +132,6 @@ footer{
     font-family: 'Bebas Neue', 'sans-serif';
   }
   
-  .index_contact{
-    display: none;
-  }
-  
   #contactanos h3{
     text-align: center;
     text-transform: uppercase;
@@ -192,7 +196,7 @@ footer{
   @media (min-width: 768px) {
 
     #grilla {
-      grid-template-rows: 200px 600px 1fr 0.4fr 400px;
+      grid-template-rows: 200px 600px 1fr 0.5fr 0.2fr;
     }
   
     .serviciosCardContainer{
@@ -209,17 +213,25 @@ footer{
     .burgerMenu{
       display: none;
     }
+
+    .menuIndex{
+      display: flex;
+      align-items: center;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
   
     .menu{
       display: flex;
-      justify-content: space-between;
       align-items: center;
       text-transform: uppercase;
+      height: 100%;
     }
   
     .menuItems{
       display: flex;
-      gap: 25px;
+      margin: auto;
+      gap: 22px;
       margin-right: 20px;
     } 
   
@@ -281,6 +293,10 @@ footer{
 
     .logo{
       width: 80px;
+    }
+
+    .menuIndex { 
+      margin-top: 1px;
     }
   
     .menuItems{
